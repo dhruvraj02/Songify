@@ -9,23 +9,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="script.css">
     <title>Songify</title>
+    
+    
     <style>
-        body{
+
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+body{
     background-color: #181818;
 }
 
 .card-text{
-    color: wheat;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
 }
 
 .card-title{
-    color: wheat;
+    color: white;
 }
+
+.navbar-brand{
+    
+}
+
+.midLines{
+  font-size: 2rem;
+  font-family: 'Varela Round', sans-serif;;
+  margin: 10px 4rem;
+  color: white;
+}
+
+.card-img-top{
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.card-body{
+  padding-top: 0;
+}
+
+.slideImg{
+  margin: 0 4rem;
+}
+
+
     </style>
+
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-      <a class="navbar-brand" href="#"><img src="logo.png" height="50px"></a>
+      <a class="navbar-brand" href="#"><img src="logo.png"  height="50px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,7 +95,10 @@
     </nav>
 
 <!--Slider Section-->
-<div class="bd-example">
+<div class="midLines">
+  <p>New Album Releases</p>
+</div>
+<div class="slideImg bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -102,39 +141,52 @@
 </div>
 
 
+
 <!-- this is card -->
-<div class="container mt-3">
-    <div class="row">
-    <div class="col-md-4">
-    <div class="card" style="width: 12rem; background-color: black;">
+
+<div class="midLines">
+  <p>Made for you</p>
+</div>
+    <div class="row row-cols-1 row-cols-md-4 g-4" style="margin: 1rem 3rem;">
+    <div class="col">
+    <div class="card" style="width: 16rem; background-color: black;">
       <img src="card-1.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Daily Mix 1</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title" style="padding-top: 0%;">Daily Mix 1</h5>
+        <p class="card-text">AP Dhillon, Sidhu Moose Wala, The PropheC and more</p>
         <a href="#" class="btn btn-dark">Browse</a>
       </div>
     </div>
 </div>
-<div class="col-md-4">
-    <div class="card" style="width: 12rem; background-color: black;">
+<div class="col">
+    <div class="card" style="width: 16rem; background-color: black;">
       <img src="card-2.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Post Malone</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">This is Post Malone. The essential tracks, all in one.</p>
         <a href="#" class="btn btn-dark">Browse</a>
       </div>
     </div>
 </div>
-<div class="col-md-4">
-    <div class="card" style="width: 12rem; background-color: black;">
+<div class="col">
+    <div class="card" style="width: 16rem; background-color: black;">
       <img src="card-3.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Daily Mix 3</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">One Direction, The Chainsmokers and more</p>
         <a href="#" class="btn btn-dark">Browse</a>
       </div>
     </div>
 </div>
+<div class="col">
+  <div class="card" style="width: 16rem; background-color: black;">
+    <img src="card-4.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Daily Mix 4</h5>
+      <p class="card-text">Prateek Kuhad, Shamoon Ismail, Arijit Singh and more</p>
+      <a href="#" class="btn btn-dark">Browse</a>
+    </div>
+  </div>
 </div>
 </div>
     <!-- Optional JavaScript -->
